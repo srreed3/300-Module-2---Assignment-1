@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Support Requests</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+</head>
+<body>
+    <h1>Support Request</h1>
+        <form id="myForm">
+            <div>
+                <label for="reqDate">Request Date</label>
+                <input type="text" id="reqDate" name="reqDate" required>
+            </div>
+            <div>
+                <label for="empID">Employee ID</label>
+                <input type="text" id="empID" name="empID" required>
+            </div>
+            <div>
+                <label for="fName">First Name</label>
+                <input type="text" id="fName" name="fName" required>
+            </div>
+            <div>
+                <label for="lName">Last Name</label>
+                <input type="text" id="lName" name="lName" required>
+            </div>
+            <div>
+                <label for="probDesc">Problem Description</label> <br>
+                <textarea id="probDesc" name="probDesc" class="probDesc" placeholder="Please list your issue(s) in full detail." rows="7" cols="62" required></textarea>
+            </div>
+            
+            <div id="formErrors"></div>
+            <div>
+                <input type="submit" id="submit" value="Submit Issue">
+            </div>
+        </form>
+
+    <script src='main.js'></script>
+</body>
+</html>
+
+
+
+
+<!-- ReqDate (request date, required, must be mm/dd/yyyy format)
+EmpID (employee ID, required, must be 6 alphanumeric characters, starting with a capital letter, followed by 5 numbers)
+FName (user first name, required, must start with capital letter)
+LName (user last name, required, must start with capital letter)
+ProbDesc (problem description, required) -->
